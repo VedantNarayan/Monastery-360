@@ -752,7 +752,7 @@ const Monastery360 = () => {
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2025 Monastery360. All rights reserved. Built for SIH25 - Preserving Heritage Through Technology.
+            © 2025 Syantax Warriors. All rights reserved. Built for SIH25 (PS25061) - Preserving Heritage Through Technology.
           </p>
         </div>
       </div>
