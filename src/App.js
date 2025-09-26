@@ -274,21 +274,34 @@ const Monastery360 = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="text-center p-8 bg-white bg-opacity-10 backdrop-blur-lg rounded-xl">
-            <Camera className="h-12 w-12 text-amber-400 mx-auto mb-4" />
-            <h3 className="text-xl font-bold text-white mb-2">Virtual Tours</h3>
-            <p className="text-gray-300">360° panoramic monastery experiences</p>
-          </div>
-          <div className="text-center p-8 bg-white bg-opacity-10 backdrop-blur-lg rounded-xl">
-            <BookOpen className="h-12 w-12 text-amber-400 mx-auto mb-4" />
-            <h3 className="text-xl font-bold text-white mb-2">Digital Archives</h3>
-            <p className="text-gray-300">Ancient manuscripts and documents</p>
-          </div>
-          <div className="text-center p-8 bg-white bg-opacity-10 backdrop-blur-lg rounded-xl">
+          {/* Virtual Tours → Maps tab */}
+          <button
+           onClick={() => setActiveSection('maps')}
+           className="text-center p-8 bg-white bg-opacity-10 backdrop-blur-lg rounded-xl hover:bg-opacity-20 transition-all w-full"
+        >
+           <Camera className="h-12 w-12 text-amber-400 mx-auto mb-4" />
+           <h3 className="text-xl font-bold text-white mb-2">Virtual Tours</h3>
+           <p className="text-gray-300">360° panoramic monastery experiences</p>
+          </button>
+          {/* Digital Archives → Archives tab */}
+          <button
+           onClick={() => setActiveSection('archives')}
+           className="text-center p-8 bg-white bg-opacity-10 backdrop-blur-lg rounded-xl hover:bg-opacity-20 transition-all w-full"
+        >
+           <BookOpen className="h-12 w-12 text-amber-400 mx-auto mb-4" />
+           <h3 className="text-xl font-bold text-white mb-2">Digital Archives</h3>
+           <p className="text-gray-300">Ancient manuscripts and documents</p>
+          </button>
+          {/* Community → Share tab */}
+            <button
+            onClick={() => setActiveSection('share')}
+            className="text-center p-8 bg-white bg-opacity-10 backdrop-blur-lg rounded-xl hover:bg-opacity-20 transition-all w-full"
+         >
             <Users className="h-12 w-12 text-amber-400 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-white mb-2">Community</h3>
             <p className="text-gray-300">Share experiences and stories</p>
-          </div>
+          </button>
+         </div>
         </div>
       </div>
     </div>
