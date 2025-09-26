@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { 
   Calendar, 
   Archive, 
@@ -222,7 +222,7 @@ const Monastery360 = () => {
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
             Immerse yourself in the spiritual heritage of Sikkim's monasteries through cutting-edge virtual reality and AI-powered experiences
           </p>
-          <button className="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:from-amber-600 hover:to-orange-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+          <button className="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:from-amber-600 hover:to-orange-700 transition-all duration-300">
             Start Virtual Tour
           </button>
         </div>
@@ -278,7 +278,7 @@ const Monastery360 = () => {
           <button
            onClick={() => setActiveSection('maps')}
            className="text-center p-8 bg-white bg-opacity-10 backdrop-blur-lg rounded-xl hover:bg-opacity-20 transition-all w-full"
-        >
+          >
            <Camera className="h-12 w-12 text-amber-400 mx-auto mb-4" />
            <h3 className="text-xl font-bold text-white mb-2">Virtual Tours</h3>
            <p className="text-gray-300">360° panoramic monastery experiences</p>
@@ -287,16 +287,16 @@ const Monastery360 = () => {
           <button
            onClick={() => setActiveSection('archives')}
            className="text-center p-8 bg-white bg-opacity-10 backdrop-blur-lg rounded-xl hover:bg-opacity-20 transition-all w-full"
-        >
+          >
            <BookOpen className="h-12 w-12 text-amber-400 mx-auto mb-4" />
            <h3 className="text-xl font-bold text-white mb-2">Digital Archives</h3>
            <p className="text-gray-300">Ancient manuscripts and documents</p>
           </button>
           {/* Community → Share tab */}
-            <button
+          <button
             onClick={() => setActiveSection('share')}
             className="text-center p-8 bg-white bg-opacity-10 backdrop-blur-lg rounded-xl hover:bg-opacity-20 transition-all w-full"
-         >
+          >
             <Users className="h-12 w-12 text-amber-400 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-white mb-2">Community</h3>
             <p className="text-gray-300">Share experiences and stories</p>
@@ -510,7 +510,7 @@ const Monastery360 = () => {
                   {monastery.location}
                 </div>
                 <div className="flex gap-2 flex-wrap mb-3">
-                  <button className="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-3 py-1 rounded-full text-sm hover:from-amber-600 hover:to-orange-700 transition-all">
+                  <button className="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-3 py-1 rounded-full text-sm hover:from-amber-600 hover:to-orange-700 transition-all duration-300">
                     <Navigation className="h-3 w-3 mr-1 inline" />
                     Navigate
                   </button>
@@ -603,7 +603,7 @@ const Monastery360 = () => {
                   <Car className="h-5 w-5 mr-2" />
                   Book Transport
                 </button>
-                <button className="w-full bg-gradient-to-r from-amber-500 to-orange-600 text-white py-3 px-4 rounded-lg font-semibold hover:from-amber-600 hover:to-orange-700 transition-all duration-300">
+                <button className="w-full bg-gradient-to-r from-amber-500 to-orange-600 text-white py-3 px-4 rounded-lg font-semibold hover:from-amber-600 hover:to-orange-700 transition-all duration-300 flex items-center justify-center">
                   Start Journey
                 </button>
               </div>
@@ -624,7 +624,7 @@ const Monastery360 = () => {
             <BookOpen className="h-12 w-12 text-amber-400 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-white mb-2">Write Blog</h3>
             <p className="text-gray-300 mb-4">Share your monastery experiences in detailed blog posts</p>
-            <button className="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-6 py-2 rounded-lg hover:from-amber-600 hover:to-orange-700 transition-all">
+            <button className="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-6 py-2 rounded-lg hover:from-amber-600 hover:to-orange-700 transition-all duration-300">
               Start Writing
             </button>
           </div>
@@ -633,7 +633,7 @@ const Monastery360 = () => {
             <Camera className="h-12 w-12 text-blue-400 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-white mb-2">Upload Video</h3>
             <p className="text-gray-300 mb-4">Share video tours and cultural performances</p>
-            <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all">
+            <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300">
               Upload Video
             </button>
           </div>
@@ -642,7 +642,7 @@ const Monastery360 = () => {
             <Volume2 className="h-12 w-12 text-green-400 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-white mb-2">Audio Stories</h3>
             <p className="text-gray-300 mb-4">Record audio experiences and spiritual reflections</p>
-            <button className="bg-gradient-to-r from-green-500 to-teal-600 text-white px-6 py-2 rounded-lg hover:from-green-600 hover:to-teal-700 transition-all">
+            <button className="bg-gradient-to-r from-green-500 to-teal-600 text-white px-6 py-2 rounded-lg hover:from-green-600 hover:to-teal-700 transition-all duration-300">
               Record Audio
             </button>
           </div>
