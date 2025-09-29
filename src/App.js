@@ -540,9 +540,9 @@ const Monastery360 = () => {
   );
 
   const HeroSection = () => (
-    <div className="relative bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 min-h-screen flex items-center overflow-hidden">
-      <div className="absolute inset-0 bg-black opacity-70">
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+  <div className="relative bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 min-h-screen flex flex-col">
+    <div className="absolute inset-0 bg-black opacity-20"></div>
+    <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-1 flex flex-col">
         <div className="text-center mb-16">
           <h1 className="text-6xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 mb-6">
             Monastery360
@@ -555,7 +555,7 @@ const Monastery360 = () => {
           </button>
         </div>
 
-        <div className="mb-16">
+  <div className="mb-8">
           <h2 className="text-3xl font-bold text-white text-center mb-8">Top 5 AI Recommended Monasteries</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {monasteries.slice(0, 5).map((monastery) => (
@@ -599,7 +599,7 @@ const Monastery360 = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
           <button
            onClick={() => setActiveSection('maps')}
            className="text-center p-8 bg-white bg-opacity-10 backdrop-blur-lg rounded-xl hover:bg-opacity-20 transition-all w-full"
@@ -627,7 +627,6 @@ const Monastery360 = () => {
          </div>
         </div>
       </div>
-    </div>
   );
 
   const ExploreUsSection = () => (
@@ -1525,7 +1524,7 @@ const Monastery360 = () => {
   );
 
   const Footer = () => (
-    <footer className="bg-gradient-to-r from-gray-900 to-black text-white py-12">
+  <footer className="bg-gradient-to-r from-gray-900 to-black text-white py-12 w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
@@ -1611,9 +1610,11 @@ const Monastery360 = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen flex flex-col bg-gray-900">
       <NavBar />
-      {renderSection()}
+      <div className="flex-1">
+        {renderSection()}
+      </div>
       <Footer />
     </div>
   );
