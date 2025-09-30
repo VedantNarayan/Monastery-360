@@ -1615,6 +1615,7 @@ const Monastery360 = () => {
       <div className="flex-1">
         {renderSection()}
       </div>
+      <Chatbot />
       <Footer />
     </div>
   );
